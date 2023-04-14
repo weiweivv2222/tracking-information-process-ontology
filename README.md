@@ -1,6 +1,6 @@
 # 🧲 Tracking Information Process Ontology
 
-[![Publish to GitHub Pages](https://github.com/pubannotation/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/pubannotation/tao/actions/workflows/publish.yml)
+[![Update documentation website](https://github.com/weiweivv2222/tracking-information-process-ontology/actions/workflows/publish.yml/badge.svg)](https://github.com/weiweivv2222/tracking-information-process-ontology/actions/workflows/publish.yml)
 
 A repository to publish documentation for the **Tracking Information Process Ontology**.
 
