@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ONTOLOGY_FILE="events.owl"
+ONTOLOGY_URL="https://raw.githubusercontent.com/weiweivv2222/tracking-information-process-ontology/main/events.owl"
 
 rm -rf docs/
 
@@ -11,7 +12,7 @@ mv docs/OOPSevaluation docs/oops
 mv docs/oops/oopsEval.html docs/oops/index.html
 
 # Generate JSON-LD context
-java -jar owl2jsonld.jar $ONTOLOGY_FILE > docs/context.jsonld
+java -jar owl2jsonld.jar $ONTOLOGY_URL > docs/context.jsonld
 
 # Generate docs with Ontospy
 mkdir -p docs/browse
