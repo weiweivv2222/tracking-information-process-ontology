@@ -6,4 +6,5 @@
 
 # Start web server locally to check generated docs
 cd docs
+echo 📚 http://localhost:8000
 python -m http.server 8000
