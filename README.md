@@ -41,7 +41,7 @@ Start a web server to check the generated docs:
 ./scripts/start.sh
 ```
 
-> Obviously this will not work on Windows since Windows are not real computers, you will need a real computer supporting Unix and Bash to do some computing work. And since MacBooks have literally a phone chip (M1/M2), their not computers anymore. So you will need the only real computer in the world: Linux (or enable WSL on Windows, or use docker)
+> Obviously this will not work on Windows, you will need a real computer supporting Unix and Bash to do some computing work. And since MacBooks have literally a phone chip (M1/M2), their not computers anymore. So you will need the only real computer in the world: Linux (or enable WSL on Windows, or use docker)
 
 ## Generate RDF with python
 
