@@ -1,8 +1,5 @@
 *.jar
-output.ttl
 /docs/
 
 .venv
 .DStore
-mappings/event_mappings - Copy.py
-mappings/3_event_data_created.json
