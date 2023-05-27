@@ -1,0 +1,17 @@
+{
+  "eventId" : "3922d43f-3688-4192-a0ee-13343d284a4e",
+  "eventName" : "ReadBrpDataProcessStarted",
+  "serviceName" : "SendBrpStartEvent",
+  "serviceVersion" : "1.0.0-20230101-000000",
+  "inputEventIds" : [ ],
+  "createdAt" : "2023-05-24T11:57:29.815Z",
+  "sagaId" : null,
+  "sagaSubjectId" : null,
+  "sagaName" : null,
+  "data" : {
+    "url" : "c:\\dev\\VO107I1 - drie klanten.ABP",
+    "hashInfo" : {
+      "expectedNumberOfLines" : 110
+    }
+  }
+}

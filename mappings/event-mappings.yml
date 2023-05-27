@@ -1,0 +1,49 @@
+prefixes:
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  dc: "http://purl.org/dc/elements/1.1/"
+  tip: "https://w3id.org/tip/ontology/"
+  tipd: "https://w3id.org/tip/data/"
+
+# TODO: map also the data objects
+mappings:
+
+  event-process-started:
+    sources:
+      - ['1_event_process_started.json~jsonpath', '$']
+    s: "tipd:event/$(eventId)"
+    po:
+      - ['a', 'tip:Event']
+      - ['tip:hasId', '$(eventId)']
+      - ['tip:hasName', '$(eventName)']
+      - ['tip:isProducedBy', 'tipd:service/$(serviceName)~iri']
+      - ['tip:hasEventName', '$(eventName)']
+      - ['tip:hasServiceName', '$(serviceName)']
+      - ['tip:hasServiceVersion', '$(serviceVersion)']
+      - ['tip:hasStartDate', '$(createdAt)']
+      - ['tip:hasInputEvent', 'tipd:event/$(inputEventIds)~iri']
+
+
+  # event-process-started-data:
+  #   sources:
+  #     - ['1_event_process_started.json~jsonpath', '$']
+  #   s: "tipd:event/$(eventId)/data/url"
+  #   po:
+  #     - ['a', 'tip:EventData']
+  #     - ['tip:hasDataPropertyPath', 'url']
+  #     - ['tip:hasDataValue', '$(data.url)']
+
+
+  event-done-klant:
+    sources:
+      - ['4_event_data_to_cdm_done_klant.json~jsonpath', '$']
+    s: "tipd:event/$(eventId)"
+    po:
+      - ['a', 'tip:Event']
+      - ['tip:hasId', '$(eventId)']
+      - ['tip:hasName', '$(eventName)']
+      - ['tip:isProducedBy', 'tipd:service/$(serviceName)~iri']
+      - ['tip:hasEventName', '$(eventName)']
+      - ['tip:hasServiceName', '$(serviceName)']
+      - ['tip:hasServiceVersion', '$(serviceVersion)']
+      - ['tip:hasStartDate', '$(createdAt)']
+      - ['tip:hasInputEvent', 'tipd:event/$(inputEventIds)~iri']

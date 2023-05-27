@@ -1,0 +1,232 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix tip: <https://w3id.org/tip/ontology/>.
+@prefix tipd: <https://w3id.org/tip/data/>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix comp: <http://semweb.mmlab.be/ns/rml-compression#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
+@base <http://example.com/ns#>.
+
+
+<event-process-started_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "1_event_process_started.json";
+		rml:referenceFormulation ql:JSONPath;
+		rml:iterator "$";
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "tipd:event/{eventId}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant tip:Event;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasId;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "eventId";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasName;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "eventName";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:isProducedBy;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "tipd:service/{serviceName}";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasEventName;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "eventName";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasServiceName;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "serviceName";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasServiceVersion;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "serviceVersion";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasStartDate;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "createdAt";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasInputEvent;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "tipd:event/{inputEventIds}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<event-done-klant_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "4_event_data_to_cdm_done_klant.json";
+		rml:referenceFormulation ql:JSONPath;
+		rml:iterator "$";
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "tipd:event/{eventId}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant tip:Event;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasId;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "eventId";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasName;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "eventName";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:isProducedBy;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "tipd:service/{serviceName}";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasEventName;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "eventName";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasServiceName;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "serviceName";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasServiceVersion;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "serviceVersion";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasStartDate;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "createdAt";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant tip:hasInputEvent;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "tipd:event/{inputEventIds}";
+			rr:termType rr:IRI
+		];
+	].
+
+

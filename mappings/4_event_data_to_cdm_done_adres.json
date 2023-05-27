@@ -1,0 +1,45 @@
+{
+  "eventId" : "25089de9-7027-4909-bb82-3dfc3d78ba62",
+  "eventName" : "BrpDataToCdmAdresDone",
+  "serviceName" : "TransformBrpDataToCdmAdres",
+  "serviceVersion" : "1.0.0-SNAPSHOT-20230524-093813",
+  "inputEventIds" : [ "e78380df-6f33-44d9-bbcb-a0bf18336cd0" ],
+  "createdAt" : "2023-05-24T11:58:34.768Z",
+  "sagaId" : null,
+  "sagaSubjectId" : null,
+  "sagaName" : null,
+  "data" : {
+    "objectId" : {
+      "mogId" : "ABP",
+      "key" : {
+        "adresBK" : " wwwtraat 305   # 9999 WW PLAATS-3#6030##0307#"
+      }
+    },
+    "objectName" : "Adres",
+    "validationErrors" : [ ],
+    "adresregelLocatie" : null,
+    "adresregelStraatHuisnr" : "wwwtraat 305",
+    "adresregelPostcodePlaats" : "9999 WW PLAATS-3",
+    "adresregelRegio" : null,
+    "adresregelLand" : "Nederland",
+    "gemeentenaam" : "AxxxQQQQ",
+    "kixcode" : "9999WW35",
+    "huisletter" : null,
+    "huisnummer" : 35,
+    "huisnummerAanduiding" : null,
+    "huisnummerToevoeging" : null,
+    "locatieOmschrijving" : null,
+    "plaatsnaam" : "PLAATS-3",
+    "postbus" : null,
+    "postcode" : "9999 WW",
+    "regio" : null,
+    "provincie" : null,
+    "straatnaam" : "wwwtraat",
+    "contactpuntGeldig" : true,
+    "objectRoot" : "nl.apg.eda.domain.cdm.Contactpunt",
+    "objectSource" : "BRP",
+    "objectEventId" : "25089de9-7027-4909-bb82-3dfc3d78ba62",
+    "objectExpiredAt" : null,
+    "objectCreatedAt" : "2023-05-24T11:58:34.768Z"
+  }
+}
