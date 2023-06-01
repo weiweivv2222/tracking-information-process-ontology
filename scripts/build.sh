@@ -31,7 +31,7 @@ find docs/index.html -type f -exec sed -i "s/<!-- <dt>Evaluation:<\/dt><dd><a hr
 find docs/index.html -type f -exec sed -i "s/<\/dd> -->/<\/dd>/g" {} +
 
 # Add favicon
-find docs/index.html -type f -exec sed -i "s/<head>/<head>\n<link rel=\"icon\" type=\"image\/x-icon\" href=\"https:\/\/pubannotation.org\/favicon.ico\">/g" {} +
+find docs/index.html -type f -exec sed -i "s/<head>/<head>\n<link rel=\"icon\" type=\"image\/x-icon\" href=\"https:\/\/www.w3.org\/favicon.ico\">/g" {} +
 
 # Add JSON-LD Context button
 find docs/index.html -type f -exec sed -i "s/alt=\"TTL\" \/><\/a> <\/span><\/dd>/alt=\"TTL\" \/><\/a> <\/span>\n<span><a href=\"context.jsonld\" target=\"_blank\"><img src=\"https:\/\/img.shields.io\/badge\/Context-JSON_LD-blue.svg\" alt=\"JSON-LD context\" \/><\/a> <\/span>\n<\/dd>/g" {} +
