@@ -1,0 +1,33 @@
+@prefix tip: <https://w3id.org/tip/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/tip/data/event/25089de9-7027-4909-bb82-3dfc3d78ba62> a tip:Event ;
+    tip:hasData <https://w3id.org/tip/data/adres/_wwwtraat_305___#_9999_WW_PLAATS-3#6030##0307#> ;
+    tip:hasInputEvent <https://w3id.org/tip/data/event/e78380df-6f33-44d9-bbcb-a0bf18336cd0> ;
+    tip:hasMogId tip:ABP ;
+    tip:hasName "BrpDataToCdmAdresDone" ;
+    tip:hasSaga <https://w3id.org/tip/data/saga/25089de9-7027-4909-bb82-3dfc3d78ba62> ;
+    tip:hasStartDate "2023-05-24T11:58:34.768Z" ;
+    tip:isProducedBy <https://w3id.org/tip/data/service/25089de9-7027-4909-bb82-3dfc3d78ba62> .
+
+<https://w3id.org/tip/data/adres/_wwwtraat_305___#_9999_WW_PLAATS-3#6030##0307#> a tip:Adres ;
+    tip:adresregelLand "Nederland" ;
+    tip:adresregelPostcodePlaats "9999 WW PLAATS-3" ;
+    tip:adresregelStraatHuisnr "wwwtraat 305" ;
+    tip:contactpuntGeldig true ;
+    tip:gemeentenaam "AxxxQQQQ" ;
+    tip:huisnummer 35 ;
+    tip:kixcode "9999WW35" ;
+    tip:plaatsnaam "PLAATS-3" ;
+    tip:postcode "9999 WW" ;
+    tip:straatnaam "wwwtraat" .
+
+<https://w3id.org/tip/data/saga/25089de9-7027-4909-bb82-3dfc3d78ba62> a tip:Saga ;
+    tip:hasId 75623563 ;
+    tip:hasName "i67j5h" ;
+    tip:hasSagaSubjectId 37563 .
+
+<https://w3id.org/tip/data/service/25089de9-7027-4909-bb82-3dfc3d78ba62> a tip:Service ;
+    tip:hasName "TransformBrpDataToCdmAdres" ;
+    tip:hasVersion "1.0.0-SNAPSHOT-20230524-093813" .
+
