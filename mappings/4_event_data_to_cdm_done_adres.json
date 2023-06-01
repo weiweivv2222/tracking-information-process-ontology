@@ -5,9 +5,9 @@
   "serviceVersion" : "1.0.0-SNAPSHOT-20230524-093813",
   "inputEventIds" : [ "e78380df-6f33-44d9-bbcb-a0bf18336cd0" ],
   "createdAt" : "2023-05-24T11:58:34.768Z",
-  "sagaId" : null,
-  "sagaSubjectId" : null,
-  "sagaName" : null,
+  "sagaId" : 75623563,
+  "sagaSubjectId" : 37563,
+  "sagaName" : "i67j5h",
   "data" : {
     "objectId" : {
       "mogId" : "ABP",

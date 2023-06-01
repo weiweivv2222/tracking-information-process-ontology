@@ -249,7 +249,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
     
 
@@ -259,7 +259,7 @@
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
     
 
@@ -269,7 +269,7 @@
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isProducedBy">
         <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
+        <range rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
     
 
@@ -278,8 +278,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#produces">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
-        <range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
+        <range rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
     
 
@@ -287,8 +286,8 @@
     <!-- https://w3id.org/tip/ontology/hasData -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasData">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-        <range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EventData"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
+        <range rdf:resource="https://w3id.org/tip/ontology/EventData"/>
     </owl:ObjectProperty>
     
 
@@ -297,8 +296,17 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasInputEvent">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-        <range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
+        <range rdf:resource="https://w3id.org/tip/ontology/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/hasMogId -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasMogId">
+        <domain rdf:resource="https://w3id.org/tip/ontology/DatabaseObject"/>
+        <comment>Every subclasses within DatabaseObject should has this mogId, and we can use it for the filtering later</comment>
     </owl:ObjectProperty>
     
 
@@ -306,7 +314,7 @@
     <!-- https://w3id.org/tip/ontology/hasObjectName -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasObjectName">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
     
 
@@ -323,7 +331,7 @@
     <!-- https://w3id.org/tip/ontology/hasValidationErrors -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasValidationErrors">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
     
 
@@ -352,7 +360,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasExpectedNumberOfLines">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:DatatypeProperty>
     
 
@@ -360,7 +368,7 @@
     <!-- http://www.co-ode.org/ontologies/ont.owl#hasFilePath -->
 
     <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasFilePath">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StartProceedUpdateDataEvent"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent"/>
     </owl:DatatypeProperty>
     
 
@@ -369,7 +377,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasId">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Saga"/>
     </owl:DatatypeProperty>
     
@@ -387,7 +395,7 @@
     <!-- https://w3id.org/tip/ontology/aanhefAanschrijving -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aanhefAanschrijving">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Klant"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
     
 
@@ -561,7 +569,7 @@
     <!-- https://w3id.org/tip/ontology/hasDataValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasDataValue">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EventData"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/EventData"/>
     </owl:DatatypeProperty>
     
 
@@ -603,6 +611,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/huisletterAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
     
 
@@ -611,6 +620,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/huisnummerAanduidingAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
     
 
@@ -619,6 +629,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/huisnummerAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
     
 
@@ -634,7 +645,7 @@
     <!-- https://w3id.org/tip/ontology/indicatieFictieveGeboortedatum -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/indicatieFictieveGeboortedatum">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Klant"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
     
 
@@ -649,7 +660,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/kixcodeAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <domain rdf:resource="https://w3id.org/tip/ontology/Address"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
     
 
@@ -670,6 +681,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/locatieOmschrijvingAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
     
 
@@ -703,8 +715,8 @@
     <!-- https://w3id.org/tip/ontology/objectSource -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/objectSource">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Klant"/>
-        <domain rdf:resource="https://w3id.org/tip/ontology/Address"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
     
 
@@ -712,7 +724,7 @@
     <!-- https://w3id.org/tip/ontology/overlijdensdatum -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/overlijdensdatum">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Klant"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
     
 
@@ -780,7 +792,7 @@
     <!-- https://w3id.org/tip/ontology/taalcode -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/taalcode">
-        <domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Klant"/>
+        <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
     
 
@@ -862,246 +874,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#DiscoverErrorEvent -->
+    <!-- https://w3id.org/tip/ontology/Adres -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DiscoverErrorEvent">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#DoneEvent -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DoneEvent">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasInputEvent"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadUpdateDataEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#Event -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Event">
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEndDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasStartDate"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#EventData -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EventData">
-        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#Klant -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Klant">
-        <subClassOf rdf:resource="https://w3id.org/tip/ontology/DatabaseObject"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/burgerservicenummer"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#NoChangeEvent -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NoChangeEvent">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasInputEvent"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadUpdateDataEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadRequestedUpdateDataService -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadRequestedUpdateDataService">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasNextService"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmAdressService"/>
-                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmKlantService"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DoneEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadUpdateDataEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DiscoverErrorEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadUpdateDataEvent -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadUpdateDataEvent">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasInputEvent"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StartProceedUpdateDataEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#Service -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Service"/>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#StartProceedRequestUpdateDataService -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StartProceedRequestUpdateDataService">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasNextService"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadRequestedUpdateDataService"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StartProceedUpdateDataEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#StartProceedUpdateDataEvent -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StartProceedUpdateDataEvent">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Event"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isProducedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StartProceedRequestUpdateDataService"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmAdressService -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmAdressService">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadRequestedUpdateDataService"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DoneEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NoChangeEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DiscoverErrorEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmKlantService -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmKlantService">
-        <subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Service"/>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadRequestedUpdateDataService"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DoneEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NoChangeEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DiscoverErrorEvent"/>
-            </owl:Restriction>
-        </subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/tip/ontology/Address -->
-
-    <owl:Class rdf:about="https://w3id.org/tip/ontology/Address">
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/Adres">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/DatabaseObject"/>
     </owl:Class>
     
@@ -1119,10 +894,253 @@
     
 
 
+    <!-- https://w3id.org/tip/ontology/DiscoverErrorEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/DiscoverErrorEvent">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/DoneEventOfTransfermation -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/DoneEventOfTransfermation">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasInputEvent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadUpdateDataEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/Event">
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEndDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasStartDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/EventData -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/EventData">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/Klant -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/Klant">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/DatabaseObject"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/burgerservicenummer"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/NoChangeEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/NoChangeEvent">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasInputEvent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadUpdateDataEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/PensionFund -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/PensionFund"/>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/ReadRequestedUpdateDataService -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasNextService"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmAdressService"/>
+                            <rdf:Description rdf:about="https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmKlantService"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/DoneEventOfTransfermation"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadUpdateDataEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tip/ontology/DiscoverErrorEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/ReadUpdateDataEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/ReadUpdateDataEvent">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasInputEvent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/tip/ontology/Saga -->
 
     <owl:Class rdf:about="https://w3id.org/tip/ontology/Saga">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/Service -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/Service"/>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/StartProceedRequestUpdateDataService -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/StartProceedRequestUpdateDataService">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasNextService"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/StartProceedUpdateDataEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/StartProceedRequestUpdateDataService"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmAdressService -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmAdressService">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/DoneEventOfTransfermation"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/NoChangeEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tip/ontology/DiscoverErrorEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmKlantService -->
+
+    <owl:Class rdf:about="https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmKlantService">
+        <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/DoneEventOfTransfermation"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/NoChangeEvent"/>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/tip/ontology/DiscoverErrorEvent"/>
+            </owl:Restriction>
+        </subClassOf>
     </owl:Class>
     
 
@@ -1132,6 +1150,49 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/ValidationError">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/tip/ontology/ABP -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/ABP">
+        <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/Bpfbouw -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/Bpfbouw">
+        <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/PPF -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/PPF">
+        <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tip/ontology/SPW -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/SPW">
+        <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1165,10 +1226,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadRequestedUpdateDataService"/>
-            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#StartProceedRequestUpdateDataService"/>
-            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmAdressService"/>
-            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformRequestUpdateDataToCdmKlantService"/>
+            <rdf:Description rdf:about="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
+            <rdf:Description rdf:about="https://w3id.org/tip/ontology/StartProceedRequestUpdateDataService"/>
+            <rdf:Description rdf:about="https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmAdressService"/>
+            <rdf:Description rdf:about="https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmKlantService"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
