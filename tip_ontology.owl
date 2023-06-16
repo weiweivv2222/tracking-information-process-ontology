@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
      xml:base="http://www.w3.org/2000/01/rdf-schema"
-     xmlns:brp="http://techlab/brp/"
-     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:ont="https://w3id.org/tip/ontology/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,210 +9,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/tip/ontology/"/>
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://techlab/brp/ExpectedLines -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/ExpectedLines"/>
-    
-
-
-    <!-- http://techlab/brp/IngeschrevenOp -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/IngeschrevenOp"/>
-    
-
-
-    <!-- http://techlab/brp/NumberOfEvents -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/NumberOfEvents"/>
-    
-
-
-    <!-- http://techlab/brp/Service.LinkedAdresPersoon -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.LinkedAdresPersoon"/>
-    
-
-
-    <!-- http://techlab/brp/Service.MasteredAdres -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.MasteredAdres"/>
-    
-
-
-    <!-- http://techlab/brp/Service.MasteredPersoon -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.MasteredPersoon"/>
-    
-
-
-    <!-- http://techlab/brp/Service.ReadBrpData -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.ReadBrpData"/>
-    
-
-
-    <!-- http://techlab/brp/Service.SendBrpStartEvent -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.SendBrpStartEvent"/>
-    
-
-
-    <!-- http://techlab/brp/Service.TransformAdres -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.TransformAdres"/>
-    
-
-
-    <!-- http://techlab/brp/Service.TransformBrpDataToCdmAdres -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.TransformBrpDataToCdmAdres"/>
-    
-
-
-    <!-- http://techlab/brp/Service.TransformBrpDataToCdmKlant -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/Service.TransformBrpDataToCdmKlant"/>
-    
-
-
-    <!-- http://techlab/brp/adk_eventid -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/adk_eventid"/>
-    
-
-
-    <!-- http://techlab/brp/adk_tot -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/adk_tot"/>
-    
-
-
-    <!-- http://techlab/brp/adk_vanaf -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/adk_vanaf"/>
-    
-
-
-    <!-- http://techlab/brp/apgid -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/apgid"/>
-    
-
-
-    <!-- http://techlab/brp/batchId -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/batchId"/>
-    
-
-
-    <!-- http://techlab/brp/bk -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/bk"/>
-    
-
-
-    <!-- http://techlab/brp/bsn -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/bsn"/>
-    
-
-
-    <!-- http://techlab/brp/burgerservicenummer -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/burgerservicenummer"/>
-    
-
-
-    <!-- http://techlab/brp/code -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/code"/>
-    
-
-
-    <!-- http://techlab/brp/contains -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/contains"/>
-    
-
-
-    <!-- http://techlab/brp/geslacht -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/geslacht"/>
-    
-
-
-    <!-- http://techlab/brp/geslachtsaanduiding -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/geslachtsaanduiding"/>
-    
-
-
-    <!-- http://techlab/brp/geslachtsnaam -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/geslachtsnaam"/>
-    
-
-
-    <!-- http://techlab/brp/numberOfLines -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/numberOfLines"/>
-    
-
-
-    <!-- http://techlab/brp/objecttype -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/objecttype"/>
-    
-
-
-    <!-- http://techlab/brp/plaatsnaam -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/plaatsnaam"/>
-    
-
-
-    <!-- http://techlab/brp/postcode -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/postcode"/>
-    
-
-
-    <!-- http://techlab/brp/startLine -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/startLine"/>
-    
-
-
-    <!-- http://techlab/brp/straatnaam -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/straatnaam"/>
-    
-
-
-    <!-- http://techlab/brp/url -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/url"/>
-    
-
-
-    <!-- http://techlab/brp/voornamen -->
-
-    <owl:AnnotationProperty rdf:about="http://techlab/brp/voornamen"/>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -243,20 +38,20 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasNextService -->
+    <!-- https://w3id.org/tip/ontology/hasNextService -->
 
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasNextService">
+    <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasNextService">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/tip/ontology/hasPreviousService"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasPreviousService -->
+    <!-- https://w3id.org/tip/ontology/hasPreviousService -->
 
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService">
+    <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasPreviousService">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Service"/>
@@ -264,19 +59,19 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#isProducedBy -->
+    <!-- https://w3id.org/tip/ontology/isProducedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isProducedBy">
-        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/isProducedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/tip/ontology/produces"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <range rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#produces -->
+    <!-- https://w3id.org/tip/ontology/produces -->
 
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#produces">
+    <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/produces">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <range rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
@@ -347,35 +142,35 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasEndDate -->
+    <!-- https://w3id.org/tip/ontology/hasEndDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasEndDate">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasEndDate">
         <domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasExpectedNumberOfLines -->
+    <!-- https://w3id.org/tip/ontology/hasExpectedNumberOfLines -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasExpectedNumberOfLines">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasExpectedNumberOfLines">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasFilePath -->
+    <!-- https://w3id.org/tip/ontology/hasFilePath -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasFilePath">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasFilePath">
         <domain rdf:resource="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasId -->
+    <!-- https://w3id.org/tip/ontology/hasId -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasId">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasId">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Saga"/>
@@ -383,9 +178,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#hasStartDate -->
+    <!-- https://w3id.org/tip/ontology/hasStartDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasStartDate">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasStartDate">
         <domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
@@ -921,13 +716,13 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/Event">
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEndDate"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasEndDate"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasStartDate"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasStartDate"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </subClassOf>
@@ -983,7 +778,7 @@
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasNextService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasNextService"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -996,19 +791,19 @@
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/DoneEventOfTransfermation"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadUpdateDataEvent"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tip/ontology/DiscoverErrorEvent"/>
             </owl:Restriction>
@@ -1051,13 +846,13 @@
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasNextService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasNextService"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent"/>
             </owl:Restriction>
         </subClassOf>
@@ -1071,7 +866,7 @@
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isProducedBy"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/isProducedBy"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/StartProceedRequestUpdateDataService"/>
             </owl:Restriction>
         </subClassOf>
@@ -1085,25 +880,25 @@
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasPreviousService"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/DoneEventOfTransfermation"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/NoChangeEvent"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tip/ontology/DiscoverErrorEvent"/>
             </owl:Restriction>
@@ -1118,25 +913,25 @@
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Service"/>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPreviousService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/hasPreviousService"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/ReadRequestedUpdateDataService"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/DoneEventOfTransfermation"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/tip/ontology/NoChangeEvent"/>
             </owl:Restriction>
         </subClassOf>
         <subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#produces"/>
+                <owl:onProperty rdf:resource="https://w3id.org/tip/ontology/produces"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/tip/ontology/DiscoverErrorEvent"/>
             </owl:Restriction>
@@ -1193,25 +988,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/SPW">
         <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://techlab/brp/Datasource.281c56a6-3589-452e-adc6-ab928201cc0d">
-        <brp:url>c:\data\test_2_bericht_v1.txt</brp:url>
-        <brp:ExpectedLines rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</brp:ExpectedLines>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://techlab/brp/Datasource.f8e965fa-ecb6-4183-8ca0-b4d375dbd4c0">
-        <brp:url>c:\data\test_2_bericht_v2.txt</brp:url>
-        <brp:ExpectedLines rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</brp:ExpectedLines>
-    </rdf:Description>
     
 
 
