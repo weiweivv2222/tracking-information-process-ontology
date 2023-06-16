@@ -8,9 +8,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/tip/ontology/"/>
-    
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -18,16 +18,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -35,7 +35,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasNextService -->
@@ -46,7 +46,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasPreviousService -->
@@ -56,7 +56,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/isProducedBy -->
@@ -66,7 +66,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <range rdf:resource="https://w3id.org/tip/ontology/Service"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/produces -->
@@ -75,7 +75,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <range rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasData -->
@@ -84,7 +84,7 @@
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
         <range rdf:resource="https://w3id.org/tip/ontology/EventData"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasInputEvent -->
@@ -94,7 +94,7 @@
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
         <range rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasMogId -->
@@ -103,7 +103,7 @@
         <domain rdf:resource="https://w3id.org/tip/ontology/DatabaseObject"/>
         <comment>Every subclasses within DatabaseObject should has this mogId, and we can use it for the filtering later</comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasObjectName -->
@@ -111,7 +111,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasObjectName">
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasSaga -->
@@ -120,7 +120,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Saga"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasValidationErrors -->
@@ -128,10 +128,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/tip/ontology/hasValidationErrors">
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -139,7 +139,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasEndDate -->
@@ -148,7 +148,7 @@
         <domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasExpectedNumberOfLines -->
@@ -157,7 +157,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasFilePath -->
@@ -165,7 +165,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasFilePath">
         <domain rdf:resource="https://w3id.org/tip/ontology/StartProceedUpdateDataEvent"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasId -->
@@ -175,7 +175,7 @@
         <domain rdf:resource="https://w3id.org/tip/ontology/Event"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Saga"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasStartDate -->
@@ -184,7 +184,7 @@
         <domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/aanhefAanschrijving -->
@@ -192,19 +192,19 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aanhefAanschrijving">
         <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/aanhefAdressering -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aanhefAdressering"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/aanspreekvorm -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aanspreekvorm"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/adresregelLandAdres -->
@@ -212,7 +212,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/adresregelLandAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/adresregelLocatieAdres -->
@@ -220,7 +220,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/adresregelLocatieAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/adresregelPostcodePlaatsAdres -->
@@ -228,7 +228,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/adresregelPostcodePlaatsAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/adresregelRegioAdres -->
@@ -236,7 +236,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/adresregelRegioAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/adresregelStraatHuisnrAdres -->
@@ -244,43 +244,43 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/adresregelStraatHuisnrAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/afwijkendeAchternaamKeuze -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/afwijkendeAchternaamKeuze"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/aowDatum -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aowDatum"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/aowLeeftijdInJaren -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aowLeeftijdInJaren"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/aowLeeftijdInMaanden -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/aowLeeftijdInMaanden"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/burgerlijkeStaat -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/burgerlijkeStaat"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/burgerservicenummer -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/burgerservicenummer"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/contactpuntGeldigAdres -->
@@ -288,31 +288,31 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/contactpuntGeldigAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/dataprobleemKlant -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/dataprobleemKlant"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/eersteAchternaam -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/eersteAchternaam"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/geboortedatum -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/geboortedatum"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/geboortejaar -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/geboortejaar"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/gemeentenaamAdres -->
@@ -320,37 +320,37 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/gemeentenaamAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/gemoedsbezwaard -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/gemoedsbezwaard"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/geslacht -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/geslacht"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/geslachtsnaam -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/geslachtsnaam"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/geslachtsnaamPartner -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/geslachtsnaamPartner"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/handmatigUitRetentieTotDatum -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/handmatigUitRetentieTotDatum"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasDataPropertyPath -->
@@ -358,7 +358,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasDataPropertyPath">
         <domain rdf:resource="https://w3id.org/tip/ontology/Communication"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasDataValue -->
@@ -366,7 +366,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasDataValue">
         <domain rdf:resource="https://w3id.org/tip/ontology/EventData"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasMessage -->
@@ -374,7 +374,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasMessage">
         <domain rdf:resource="https://w3id.org/tip/ontology/ValidationError"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasName -->
@@ -382,7 +382,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasName">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasSagaSubjectId -->
@@ -391,7 +391,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Saga"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/hasVersion -->
@@ -399,7 +399,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/hasVersion">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/huisletterAdres -->
@@ -408,7 +408,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/huisnummerAanduidingAdres -->
@@ -417,7 +417,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/huisnummerAdres -->
@@ -426,7 +426,7 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/huisnummerToevoegingAdres -->
@@ -434,7 +434,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/huisnummerToevoegingAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/indicatieFictieveGeboortedatum -->
@@ -442,13 +442,13 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/indicatieFictieveGeboortedatum">
         <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/indicatieOverleden -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/indicatieOverleden"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/kixcodeAdres -->
@@ -457,19 +457,19 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/klantnummer -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/klantnummer"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/koppelingBRP -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/koppelingBRP"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/locatieOmschrijvingAdres -->
@@ -478,25 +478,25 @@
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/objectCreatedAt -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/objectCreatedAt"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/objectEventId -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/objectEventId"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/objectExpiredAt -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/objectExpiredAt"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/objectRoot -->
@@ -504,7 +504,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/objectRoot">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/objectSource -->
@@ -513,7 +513,7 @@
         <domain rdf:resource="https://w3id.org/tip/ontology/Adres"/>
         <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/overlijdensdatum -->
@@ -521,7 +521,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/overlijdensdatum">
         <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/plaatsnaamAdres -->
@@ -529,7 +529,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/plaatsnaamAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/postbusAdres -->
@@ -537,7 +537,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/postbusAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/postcodeAdres -->
@@ -545,7 +545,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/postcodeAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/provincieAdres -->
@@ -553,7 +553,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/provincieAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/regioAdres -->
@@ -561,19 +561,19 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/regioAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/retentieIndicatie -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/retentieIndicatie"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/samengesteldeAchternaam -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/samengesteldeAchternaam"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/straatnaamAdres -->
@@ -581,7 +581,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/straatnaamAdres">
         <subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/taalcode -->
@@ -589,76 +589,76 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/taalcode">
         <domain rdf:resource="https://w3id.org/tip/ontology/Klant"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/titelAchterNaam -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/titelAchterNaam"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/titelVoorNaam -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/titelVoorNaam"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/toegangMijnFonds -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/toegangMijnFonds"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/toegangPlanUwPensioen -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/toegangPlanUwPensioen"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/vervallenKlant -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/vervallenKlant"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/volledigeNaam -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/volledigeNaam"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/voorletters -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/voorletters"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/voornamen -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/voornamen"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/voorvoegsels -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/voorvoegsels"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/voorvoegselsPartner -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/voorvoegselsPartner"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/wijzeNaamgebruik -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/tip/ontology/wijzeNaamgebruik"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -666,7 +666,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Adres -->
@@ -674,19 +674,19 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/Adres">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/DatabaseObject"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Communication -->
 
     <owl:Class rdf:about="https://w3id.org/tip/ontology/Communication"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/DatabaseObject -->
 
     <owl:Class rdf:about="https://w3id.org/tip/ontology/DatabaseObject"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/DiscoverErrorEvent -->
@@ -694,7 +694,7 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/DiscoverErrorEvent">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Event"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/DoneEventOfTransfermation -->
@@ -708,7 +708,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Event -->
@@ -727,7 +727,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/EventData -->
@@ -735,7 +735,7 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/EventData">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Klant -->
@@ -749,7 +749,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/NoChangeEvent -->
@@ -763,13 +763,13 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/PensionFund -->
 
     <owl:Class rdf:about="https://w3id.org/tip/ontology/PensionFund"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/ReadRequestedUpdateDataService -->
@@ -809,7 +809,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/ReadUpdateDataEvent -->
@@ -823,7 +823,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Saga -->
@@ -831,13 +831,13 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/Saga">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Service -->
 
     <owl:Class rdf:about="https://w3id.org/tip/ontology/Service"/>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/StartProceedRequestUpdateDataService -->
@@ -857,7 +857,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/StartProceedUpdateDataEvent -->
@@ -871,7 +871,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmAdressService -->
@@ -904,7 +904,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/TransformRequestUpdateDataToCdmKlantService -->
@@ -937,7 +937,7 @@
             </owl:Restriction>
         </subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/ValidationError -->
@@ -945,10 +945,10 @@
     <owl:Class rdf:about="https://w3id.org/tip/ontology/ValidationError">
         <subClassOf rdf:resource="https://w3id.org/tip/ontology/Communication"/>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -956,7 +956,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/ABP -->
@@ -964,7 +964,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/ABP">
         <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/Bpfbouw -->
@@ -972,7 +972,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/Bpfbouw">
         <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/PPF -->
@@ -980,7 +980,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/PPF">
         <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/tip/ontology/SPW -->
@@ -988,10 +988,10 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/tip/ontology/SPW">
         <rdf:type rdf:resource="https://w3id.org/tip/ontology/PensionFund"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
