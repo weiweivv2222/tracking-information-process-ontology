@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ONTOLOGY_FILE="events.owl"
-ONTOLOGY_URL="https://raw.githubusercontent.com/weiweivv2222/tracking-information-process-ontology/main/events.owl"
+ONTOLOGY_FILE="tip_ontology.owl"
+ONTOLOGY_URL="https://raw.githubusercontent.com/weiweivv2222/tracking-information-process-ontology/main/tip_ontology.owl"
 
 rm -rf docs/
 
